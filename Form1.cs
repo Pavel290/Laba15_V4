@@ -12,7 +12,8 @@ namespace Laba15_V4 {
                 panelChooseColor.BackColor = dlg.Color;
             }
         }
-        private void btnChooseFonts_Click (object sender, EventArgs e) {
+
+        private void btnChooseFonts_Click(object sender, EventArgs e) {
             FontDialog fontDialog = new FontDialog();
             fontDialog.ShowColor = true;
             fontDialog.ShowHelp = true;
@@ -21,23 +22,24 @@ namespace Laba15_V4 {
                 txtChooseFont.ForeColor = fontDialog.Color;
             }
         }
-        private void btnChooseFile_Cklick() {
+
+        private void btnChooseFile_Click(object sender, EventArgs e) {
             FolderBrowserDialog dlg = new FolderBrowserDialog();
             dlg.Description = "Выберите папку для демонстрации работы диалога.";
             dlg.ShowNewFolderButton = true;
             dlg.SelectedPath = Application.StartupPath;
 
-
             if (dlg.ShowDialog() == DialogResult.OK) {
                 txtChooseFolder.Text = dlg.SelectedPath;
             }
         }
-        private void btnChooseFolder_Click() {
+
+        private void btnChooseFolder_Click(object sender, EventArgs e) {
             OpenFileDialog dlg = new OpenFileDialog();
             dlg.InitialDirectory = Application.StartupPath;
             dlg.Filter = "txt file  (*.txt)|*.txt|" +
                 "Мои файлы (расширение не придумал)|*.xxx" +
-                "Сборки (*.exe)|*.exe";
+                "Сборки (*.exe)|*.exe|";
             dlg.FilterIndex = 3;
             dlg.Title = "Выбор моего файла";
 

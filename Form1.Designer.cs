@@ -41,6 +41,7 @@
             btnChooseColor.TabIndex = 0;
             btnChooseColor.Text = "Выбор цвета";
             btnChooseColor.UseVisualStyleBackColor = true;
+            btnChooseColor.Click += btnChooseColor_Click;
             // 
             // btnChooseFonts
             // 
@@ -50,6 +51,7 @@
             btnChooseFonts.TabIndex = 1;
             btnChooseFonts.Text = "Выбор шрифта";
             btnChooseFonts.UseVisualStyleBackColor = true;
+            btnChooseFonts.Click += btnChooseFonts_Click;
             // 
             // btnChooseFile
             // 
@@ -59,6 +61,7 @@
             btnChooseFile.TabIndex = 2;
             btnChooseFile.Text = "Выбор файла";
             btnChooseFile.UseVisualStyleBackColor = true;
+            btnChooseFile.Click += btnChooseFile_Click;
             // 
             // btnChooseFolder
             // 
@@ -68,6 +71,7 @@
             btnChooseFolder.TabIndex = 3;
             btnChooseFolder.Text = "Выбор каталога";
             btnChooseFolder.UseVisualStyleBackColor = true;
+            btnChooseFolder.Click += btnChooseFolder_Click;
             // 
             // panelChooseColor
             // 
